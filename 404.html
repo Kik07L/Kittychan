@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            @font-face {
+                font-family: "h"; 
+                src:url("fonts/iosevka.woff2") format("embedded-opentype"),
+                url("fonts/iosevka.woff2") format("woff2"),
+                url("fonts/iosevka.woff2") format("woff"),
+                url("fonts/iosevka.woff2") format("truetype"),
+                url("fonts/iosevka.woff2") format("svg");
+            }
+            .b {
+                font-family: h;
+                background-color: black;
+                font-size: 700%;
+                text-align: center;
+                color: white;
+            }
+            .rainbow-text {
+                font-family: h;
+                font-size: 100%;
+                text-align: center;
+                background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+                -webkit-background-clip: text;
+                color: transparent;
+                animation: rainbow 5s linear infinite;
+                background-size: 400% 100%;
+            }
+            @keyframes rainbow {
+                0% { background-position: 0% 50%; }
+                100% { background-position: 100% 50%; }
+            }
+        </style>
+        <title>where are you?</title>
+        <link rel="icon" href="icon.png">
+    </head>
+    <body class="b">
+        <p class="rainbow-text">nothing was here</p>
+        <a href="/" style="font-size: 40%;color:rgb(238, 135, 211);text-decoration: none;">looking for something?</a>
+    </body>
+</html>
